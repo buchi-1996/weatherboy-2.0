@@ -1,0 +1,21 @@
+{
+    "name": "Weather Boy",
+    "short_name": "Weatherboy",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "#66ccff",
+    "theme_color": "#66ccff",
+    "orientation": "portrait-primary",
+    "icons": [
+        {
+            "src": "/img/energy.png",
+            "type": "image/png",
+            "sizes": "72x72"
+        },
+        {
+            "src": "/img/energy.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        }
+    ]
+}
