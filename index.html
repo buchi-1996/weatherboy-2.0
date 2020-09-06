@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="container">
+    <div class="app__left">
+      <img src="img/Ripple-1s-200px.gif" alt="" id="img__loader">
+      <div class="app__header">
+        <div class="app__brand">Weatherboy</div>
+        <form class="search__form">
+          <input type="search" id="search" placeholder="Boston....">
+          <button type="submit" id="submit"><i class="fa fa-search"></i></button>
+        </form>
+      </div>
+      <div class="app__body">
+          <div class="city__details">
+              <h2 class="city__name"></h2>
+              <p class="date"></p>
+              <div class="weather__rep">
+                <h1 class="city__temp"></h1>
+                <div class="weather__img">
+                    <img src="" alt="">
+                    <p class="weather__desc"></p>
+                </div>
+              </div>
+              <div class="hold__event">
+                  <h2></h2>
+              </div>
+          </div>
+          <div class="more__details">
+              <div class="wind box">
+                  <span class="title">Wind</span>
+                  <h3 class="wind__range"></h3>
+                <span class="symbol">km/h</span>
+              </div>
+              <div class="feels__like box">
+                <span class="title">Feels Like</span>
+                <h3 class="feel__range"></h3>
+              <span class="symbol"><img src="" alt="" class="image"></span>
+            </div>
+            <div class="humidity box">
+                <span class="title">Humidity</span>
+                <h3 class="humidity__range"></h3>
+              <span class="symbol">%</span>
+            </div>
+          </div>
+      </div>
+    </div>
+    <div class="app__right">
+        <div class="card">
+            <h4 class="card__heading">List of Capital cities </h4>
+            <div class="cities"></div>
+        </div>
+    </div>
+  </div>
+  <div class="empty__field"></div>
+  <div class="wrong__city"></div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
