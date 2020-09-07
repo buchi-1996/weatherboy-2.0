@@ -126,7 +126,7 @@ body {
 .more__details .box {
   background: rgba(34, 34, 34, 0.288);
   width: 200px;
-  height: 180px;
+  height: auto;
   margin-bottom: 10px;
 }
 
@@ -294,7 +294,7 @@ body {
   .more__details .box {
     background: rgba(34, 34, 34, 0.288);
     width: 150px;
-    height: 170px;
+    height: auto;
     margin: 15px;
   }
 
@@ -320,7 +320,7 @@ body {
   .more__details .box {
     background: rgba(34, 34, 34, 0.288);
     width: 130px;
-    height: 170px;
+    height: auto;
     margin: 15px;
   }
 
@@ -402,7 +402,7 @@ body {
   .more__details .box {
     background: rgba(34, 34, 34, 0.288);
     width: 150px;
-    height: 180px;
+    height: auto;
     margin: 10px 1px;
   }
 
