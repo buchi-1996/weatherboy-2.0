@@ -212,6 +212,7 @@ body {
   font-size: 1.2em;
   padding: 10px 0;
   font-weight: 600;
+  text-align: center;
 }
 
 .app__right ul li:hover {
@@ -328,9 +329,6 @@ body {
     text-align: center;
   }
 
-  .city__name{
-    font-size: 1em;
-  }
 
   .weather__rep {
     justify-content: center;
