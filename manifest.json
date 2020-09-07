@@ -3,8 +3,8 @@
     "short_name": "Weatherboy",
     "start_url": "/index.html",
     "display": "standalone",
-    "background_color": "#66ccff",
-    "theme_color": "#66ccff",
+    "background_color": "#fff",
+    "theme_color": "#fff",
     "orientation": "portrait-primary",
     "icons": [
         {
