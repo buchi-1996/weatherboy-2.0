@@ -15,7 +15,7 @@
  ]
  self.addEventListener('install', e => {
     //  console.log('service worker has been installed');
-    self.skipWaiting();
+    // self.skipWaiting();
     e.waitUntill(caches.open(staticCacheName)
     .then(cache => {
         console.log('caching assets');
