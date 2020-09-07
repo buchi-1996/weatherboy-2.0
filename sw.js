@@ -10,9 +10,11 @@
      '/img/Ripple-1s-200px.gif',
      'https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css',
      'https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap',
+     
  ]
  self.addEventListener('install', e => {
     //  console.log('service worker has been installed');
+    self.skipWaiting();
     e.waitUntill(caches.open(staticCacheName)
     .then(cache => {
         console.log('caching assets');
