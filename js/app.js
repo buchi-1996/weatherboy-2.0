@@ -61,12 +61,12 @@ class Ui{
         console.log(data);
         this.cityName.textContent = `${data.name}, ${data.sys.country}`;
         this.weatherResult.textContent = `${Math.trunc(data.main.temp)}\xB0c`;
-        this.weatherIcon.setAttribute('src', `http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`);
+        this.weatherIcon.setAttribute('src', `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`);
         this.weatherNow.textContent = data.weather[0].description;
         this.wind.textContent = `${data.wind.speed}`;
         this.feelsLike.textContent = `${Math.trunc(data.main.feels_like)}\xB0c`;
         this.humidity.textContent = `${Math.trunc(data.main.humidity)}`;
-        this.image.setAttribute('src', `http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`);
+        this.image.setAttribute('src', `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`);
         this.eventWillHold.textContent = this.validateEvent(data);
     }
 
