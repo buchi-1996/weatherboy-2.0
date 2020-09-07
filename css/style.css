@@ -292,7 +292,7 @@ body {
   }
 
   .more__details .box {
-    background: rgba(34, 34, 34, 0.288);
+    background: rgba(34, 34, 34, 0.473);
     width: 150px;
     height: auto;
     margin: 15px;
@@ -318,7 +318,7 @@ body {
   }
 
   .more__details .box {
-    background: rgba(34, 34, 34, 0.288);
+    background: rgba(34, 34, 34, 0.473);
     width: 130px;
     height: auto;
     margin: 15px;
@@ -345,6 +345,14 @@ body {
   .card .cities {
     height: 800px;
     overflow-y: scroll;
+  }
+
+  .box .symbol {
+   font-size: 1.3em;
+  }
+
+  .box .title {
+    font-size: 1em;
   }
 }
 
@@ -399,11 +407,20 @@ body {
     justify-content: space-between;
   }
 
+  .box .symbol {
+    font-size: 1.3em;
+   }
+
+   .box .title {
+    font-size: 1em;
+  }
+
   .more__details .box {
-    background: rgba(34, 34, 34, 0.288);
+    background: rgba(34, 34, 34, 0.445);
     width: 150px;
     height: auto;
     margin: 10px 1px;
+
   }
 
   .card .cities {
@@ -434,5 +451,13 @@ body {
     margin-right: 0;
     text-align: center;
     margin-top: 20px;
+  }
+
+  .box .symbol {
+    font-size: 1.3em;
+   }
+
+   .box .title {
+    font-size: 1em;
   }
 }
