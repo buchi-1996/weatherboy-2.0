@@ -1,4 +1,23 @@
 
+class Weather{
+    constructor(city){
+        this.city = city;
+        this.apiKey = 'aaf6e61337fd5555767d7bd243858055';
+        this.loader = document.querySelector('#img__loader');
+    }
+
+    async getWeather(){
+        const response =  await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${this.city}&appid=${this.apiKey}&units=metric`)
+        const resData = await response.json();
+        this.loader.style.display = 'none';
+        return resData;
+    }
+
+    changeCity(city){
+        this.city = city;
+    }
+}
+
 
 class App{
     constructor(){
@@ -94,33 +113,13 @@ class Ui{
         const myCity = new Cities();
          myCity.getCities()
          .then(data => {
-            const list = data.map(x => `<p class="list__item"><img src=${x.flag} class="flag__img">${x.city}</p>`).join('');
+            const list = data.map(x => `<p class="list__item"><img src=${x.flag} alt="flag" class="flag__img">${x.city}</p>`).join('');
             this.cities.innerHTML = list;
          });
     }
 
 }
 
-
-
-class Weather{
-    constructor(city){
-        this.city = city;
-        this.apiKey = 'aaf6e61337fd5555767d7bd243858055';
-        this.loader = document.querySelector('#img__loader');
-    }
-
-    async getWeather(){
-        const response =  await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${this.city}&appid=${this.apiKey}&units=metric`)
-        const resData = await response.json();
-        this.loader.style.display = 'none';
-        return resData;
-    }
-
-    changeCity(city){
-        this.city = city;
-    }
-}
 
 
 class Cities {
@@ -156,8 +155,6 @@ class DateApp{
     }
 }
 
-
-
 class Storage{
     constructor(){
         this.city;
@@ -182,12 +179,13 @@ class Storage{
 }
 
 
-
-
-
 const myStore = new Storage();
 const getCity = myStore.getData();
 const myWeather = new Weather(getCity.city);
+
+
+
+
 // =============================================================
             // EVENT LISTENERS
 //============================================================

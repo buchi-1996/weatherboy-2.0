@@ -10,12 +10,14 @@
         {
             "src": "/img/energy.png",
             "type": "image/png",
-            "sizes": "72x72"
+            "sizes": "72x72",
+            "purpose": "maskable"
         },
         {
             "src": "/img/energy.png",
             "type": "image/png",
-            "sizes": "512x512"
+            "sizes": "512x512",
+            "purpose": "maskable"
         }
     ]
 }

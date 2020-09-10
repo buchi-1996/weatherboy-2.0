@@ -13,7 +13,7 @@ body {
 
 body {
   background: linear-gradient(rgba(0, 0, 0, 0.568), rgba(0, 0, 0, 0.1)),
-    url(../img/bora_bora_bungalows-wallpaper-1024x768.jpg) center/cover
+    url(../img/bora_bora_bungalows-wallpaper-1024x768\ \(1\).webp) center/cover
       no-repeat;
   color: #fff;
   font-family: "Nunito Sans", sans-serif;
@@ -108,10 +108,18 @@ body {
   text-align: center;
 }
 
+.weather__img img{
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
 .weather__desc {
   margin-top: -1.5em;
   margin-bottom: 0.8rem;
 }
+
+
 
 .hold__event h2 {
   font-weight: normal;
@@ -265,6 +273,8 @@ body {
   margin-top: -1.2em;
 }
 
+
+
 @media screen and (max-width: 1040px) {
   .app__left .app__header {
     flex-direction: column;
@@ -315,7 +325,7 @@ body {
   }
 
   .app__right{
-    width: 100vw;
+    width: 100%;
   }
 
   .more__details .box {
